@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <meta name="description" content="Form">
+    <meta name="keywords" content="form">
+    <link rel="stylesheet" href="form.css">
+</head>
+<br>
+<body>
+    <!-- <marquee behavior="" direction="" style="color: rgb(14, 12, 8);"><h1>Course Registration Course Form</h1></marquee> -->
+     <H1 style="color: black; text-align: center;">Course Registration Course Form</H1>
+   
+<fieldset>
+<legend style=" font-size: large;">Personal Details</legend>
+<form action="" target="_blank">
+<table> 
+    <tr>
+        <td><label for="">First Name</label></td>
+        <td><input type="text" placeholder ="Ex:Venki" name="FN" required> <p>Enter your name</p></td>
+    </tr>
+    <tr>
+        <td><label for="">Surname</label></td>
+        <td><input type="text" placeholder="Ex:S" name="LN" optional><p>Enter your Surname</p></td>
+    </tr>
+    <tr>
+           <td><label for="">Mobil No</label></td>
+           <td><input type="tel" placeholder="Ex:6979848948" name="mob" maxlength="10" required> <p>Enter your Mobile Number</p></td>
+
+    </tr>
+    <tr>
+        <td><label for="">Email</label></td>
+        <td><input type="Email"placeholder="Ex:Venki@gmail.com" name="gmail" required>
+        <img src="ok.png" class="o1">
+        <img src="no.jpg" class="n1"></td>
+    </tr>
+    <tr>
+        <td><label for="">Password</label></td>
+        <td><input type="password" name="password" required><p>Atleast 1 Uppercase, 1 Lowercase and 1 Spl char</p></td>
+    </tr>
+    <tr>
+        <td><label for="">Confirm Password</label></td>
+        <td><input type="password" name="cp" required><p>Repeat the Password</p></td>
+    </tr>
+    <tr>
+        <td><label for="">DOB</label></td>
+        <td><input type="date" name="DOB" required><p>Date of Birth</p></td>
+    </tr>
+    <tr>
+        <td><label for="">Age</label></td>
+        <td><input type="number"  name="age" min="18"  required>
+            <img src="ok.png" class="ok1">
+            <img src="no.jpg" class="no1"></td>
+    </tr>
+    <tr>
+        <td><label for="">Gender</label></td>
+        <td><input type="radio" name="Gender" value="m"><label for="">Male</label> 
+            <input type="radio" name="Gender" value="f"> <label for="">Female</label>
+            <input type="radio" name="Gender" value="f"> <label for="">Others</label>
+            <p>Select Gender</p>
+        </td>
+    </tr>
+    <tr>
+        <td><label for="">Select Country</label></td>
+        <td><select> <option value="">India</option>
+                      <option value="">China</option>
+                      <Option value="">USA</Option>
+        </select></td>
+
+    </tr>
+    <tr>
+        <td><label for="">Upload Picture</label></td>
+        <td><input type="file" required></td>
+    
+    </tr>
+
+    
+    
+</table>
+</fieldset> 
+<br> 
+<fieldset>
+<legend style=" font-size: large;">Course Details</legend>
+
+    <table>
+        <tr>
+            <td>
+                <label for="">Select Course</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <select name="" id="">
+                    <option value="">Java Full Stack</option>
+                    <option value="">Python Full Stack</option>
+                    <option value="">Mern Full Stack</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="">Delivary Mode</label></td>
+            <td>
+                <input type="radio" name="Mode" value="ON"><label for="">Online</label>
+                <input type="radio" name="Mode" value="OFF"><label for="">Offline</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="">Institute Name </label>
+            </td>
+            <td>
+                <input type="text" value="TAP ACADEMY" readonly  >
+            </td>
+        </tr>
+       
+        <tr>
+            <td>
+                <input type="reset" style="border: 2px solid black;">
+            </td> 
+        </tr>
+        <tr>
+            <td>
+                <label for="">Comments</label>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>
+                <textarea name="" id="" cols="20" rows="2" placeholder="Comments" style=" border: 2px solid rgb(22, 18, 18); background-color: (152, 110, 158);"></textarea>
+            </td>
+        </tr>
+    </table> 
+</fieldset>
+<br>
+<div id="sub">
+    <input type="submit" name="sub"style="border: 2px solid black ;">
+</div>
+</form>
